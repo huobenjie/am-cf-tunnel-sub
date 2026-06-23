@@ -5,7 +5,8 @@
  * BLog     : https://amclubss.com
  */
 
-let id = base64Decode('ZWM4NzJkOGYtNzJiMC00YTA0LWI2MTItMDMyN2Q4NWUxOGVk');
+let id = (typeof env !== 'undefined' && env.ID) ? env.ID : base64Decode('ZWM4NzJkOGYtNzJiMC00YTA0LWI2MTItMDMyN2Q4NWUxOGVk');
+
 let uuid;
 let host;
 
